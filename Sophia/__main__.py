@@ -5,7 +5,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters, idle
 
-from Sophia import (
+from MissVisa import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -26,10 +26,10 @@ from Sophia import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Sophia.modules import ALL_MODULES
-from Sophia.modules.helper_funcs.chat_status import is_user_admin
-from Sophia.modules.helper_funcs.misc import paginate_modules
-from Sophia.modules.sudoers import bot_sys_stats
+from MissVisa.modules import ALL_MODULES
+from MissVisa.modules.helper_funcs.chat_status import is_user_admin
+from MissVisa.modules.helper_funcs.misc import paginate_modules
+from MissVisa.modules.sudoers import bot_sys_stats
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -76,15 +76,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 𝗦𝗼𝗽𝗵𝗶𝗮 
-𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
-Project By @DihanOfficial ❤
+𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 ༒ 𝓥 𝓘 𝓢 𝓐 ༒ 
+𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/917f07bccd07bed9b7cb6.png)
+Project By @MissVisa_Updates ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
+            text="➕ Add 𝓥 𝓘 𝓢 𝓐 to your Group ➕", url="t.me/MissVisa_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
@@ -93,9 +93,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
+        InlineKeyboardButton(text="🙋‍♀️ Chat Group", url=f"https://t.me/WeGetTogether"),
         InlineKeyboardButton(
-            text="💬 Support Group", url=f"https://t.me/dihan_official"
+            text="💬 Support Group", url=f"https://t.me/Visa_Support"
         ),
     ],
     [
@@ -105,14 +105,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 
+`Hi.. I'm` ༒ 𝓥 𝓘 𝓢 𝓐 ༒
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @dihanofficial 💓 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) """
+Powered by @CALL_ME_VP 💓 [️️ ️](https://telegra.ph/file/9db5728da1b4c5cc451df.jpg) """
 
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Dihan Randila](t.me/dihanrandila) \
- Supporting isnt always financial! [Dihan Official](t.me/dihanofficial) \
+ You can support the project Of [CALLMEVP](t.me/CALL_ME_VP) \
+ Supporting isnt always financial! [VISA SUPPORT](t.me/Visa_Support) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -126,7 +126,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Sophia.modules." + module_name)
+    imported_module = importlib.import_module("MissVisa.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -354,32 +354,32 @@ def help_button(update, context):
 
 
 @run_async
-def sophia_about_callback(update, context):
+def MissVisa_about_callback(update, context):
     query = update.callback_query
-    if query.data == "sophia_":
+    if query.data == "MissVisa_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *MissVisa*, a powerful group management bot built to help you manage your group easily.
                  \n* I can restrict users.
                  \n* I can greet users with customizable welcome messages and even set a group's rules.
                  \n* I have an advanced anti-flood system.
                  \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n* I check for admins' permissions before executing any command
-                 \n* Awesome Secret @DihanOfficial
-                 \n* Support Group @dihan_official
-                 \* Assistant @SophiaX_Support
-                 \n\nIf you have any question about Sophia, let us know at .""",
+                 \n* Awesome Secret @MissVisa_Updates
+                 \n* Support Group @MissVisa_Updates
+                 \* Assistant @Visa_Support
+                 \n\nIf you have any question about MissVisa, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="sophia_back")
+                    InlineKeyboardButton(text="Back", callback_data="MissVisa_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "sophia_back":
+    elif query.data == "MissVisa_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -399,8 +399,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😍 I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
+            text=""" Hi..😍 I'm *MissVisa*
+                 \nHere is the [Source Code](https://github.com/MissVisa/MissVisa) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -647,7 +647,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1154659827 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -695,10 +695,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @dihanofficial")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @MissVisa_Updates")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to @dihan_official, go and check!"
+                "Bot isnt able to send message to @MissVisa_Updates, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
@@ -712,7 +712,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(sophia_about_callback, pattern=r"sophia_")
+    about_callback_handler = CallbackQueryHandler(sophia_about_callback, pattern=r"MissVisa_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
