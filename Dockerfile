@@ -63,12 +63,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/Sophia
-RUN git clone -b shiken https://github.com/dihanrandila1/Sophia /root/Sophia
-WORKDIR /root/Sophia
+# Copy Python Requirements to /root/MissVisa
+RUN git clone -b shiken https://github.com/MissVisa/MissVisa /root/MissVisa
+WORKDIR /root/MissVisa
 
-#Copy config file to /root/Sophia/Sophia
-COPY ./Sophia/sample_config.py ./Sophia/config.py* /root/Sophia/Sophia/
+#Copy config file to /root/MissVisa/MissVisa
+COPY ./MissVisa/sample_config.py ./MissVisa/config.py* /root/MissVisa/MissVisa/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -76,4 +76,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Sophia"]
+CMD ["python3","-m","MissVisa"]
