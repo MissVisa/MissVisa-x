@@ -1,6 +1,6 @@
 import sys
 from envparse import env
-from Sophia import LOGGER
+from MissVisa import LOGGER
 
 
 DEFAULTS = {
