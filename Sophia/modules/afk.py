@@ -1,12 +1,12 @@
 import random, html
 
-from Sophia import dispatcher
-from Sophia.modules.disable import (
+from MissVisa import dispatcher
+from MissVisa.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from Sophia.modules.sql import afk_sql as sql
-from Sophia.modules.users import get_user_id
+from MissVisa.modules.sql import afk_sql as sql
+from MissVisa.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
