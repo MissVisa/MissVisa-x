@@ -2,13 +2,13 @@ import html
 
 from time import sleep, time
 
-import Sophia.modules.sql.chatbot_sql as sql
+import MissVisa.modules.sql.chatbot_sql as sql
 from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 from coffeehouse.lydia import LydiaAI
-from Sophia import OWNER_ID, dispatcher
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.helper_funcs.filters import CustomFilters
+from MissVisa import OWNER_ID, dispatcher
+from MissVisa.modules.helper_funcs.chat_status import user_admin
+from MissVisa.modules.helper_funcs.filters import CustomFilters
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
@@ -126,8 +126,8 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Sophia's AI based Chatbot feature allows Daisy to talk and provides a more interactive group chat experience.
-When the AI Enabled Daisy will start chatting when you repliying her Messages!!
+Visa's AI based Chatbot feature allows Visa to talk and provides a more interactive group chat experience.
+When the AI Enabled Visa will start chatting when you repliying her Messages!!
 *Please Note that AI Support only for English Language*
 *Commands:* 
 *Admins only:*
