@@ -11,9 +11,9 @@ from telegram.ext import run_async
 
 from telegram.utils.helpers import mention_html
 
-from Sophia import DRAGONS, dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.chat_status import (
+from MissVisa import DRAGONS, dispatcher
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -21,19 +21,19 @@ from Sophia.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from Sophia.helper_extra.admin_rights import (
+from MissVisa.helper_extra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from Sophia.modules.helper_funcs.extraction import (
+from MissVisa.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.helper_funcs.alternate import send_message
-from Sophia.modules.helper_funcs.alternate import typing_action
+from MissVisa.modules.log_channel import loggable
+from MissVisa.modules.helper_funcs.alternate import send_message
+from MissVisa.modules.helper_funcs.alternate import typing_action
 
 
 @run_async
