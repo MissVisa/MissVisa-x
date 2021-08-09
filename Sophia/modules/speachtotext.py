@@ -1,4 +1,4 @@
-from Sophia import telethn as tbot
+from MissVisa import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Sophia import *
-from Sophia.events import register
+from MissVisa import *
+from MissVisa.events import register
 
 
 async def is_register_admin(chat, user):
@@ -33,7 +33,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply(" Need Admin Pewer.. You can't use this command.. But you can use in my [Pm](http://t.me/SophiaSLBot)")
+       await event.reply(" Need Admin Pewer.. You can't use this command.. But you can use in my [Pm](http://t.me/MissVisa_Bot)")
        return
 
     start = datetime.now()
