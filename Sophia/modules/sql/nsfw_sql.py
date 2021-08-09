@@ -1,8 +1,7 @@
 import threading
 
-
 from sqlalchemy import Column, String
-from Sophia.modules.sql import BASE, SESSION
+from MissVisa.modules.sql import BASE, SESSION
 
 class NSFWChats(BASE):
     __tablename__ = "nsfw_chats"
