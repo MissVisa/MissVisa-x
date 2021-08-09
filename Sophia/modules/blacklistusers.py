@@ -1,4 +1,4 @@
-#  DIHAN OFFICIAL 2021
+#  CALL ME VP 2021
 
 
 
@@ -13,8 +13,8 @@
 
 
 import html
-import Sophia.modules.sql.blacklistusers_sql as sql
-from Sophia import (
+import MissVisa.modules.sql.blacklistusers_sql as sql
+from MissVisa import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -23,12 +23,12 @@ from Sophia import (
     WOLVES,
     dispatcher,
 )
-from Sophia.modules.helper_funcs.chat_status import dev_plus
-from Sophia.modules.helper_funcs.extraction import (
+from MissVisa.modules.helper_funcs.chat_status import dev_plus
+from MissVisa.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Sophia.modules.log_channel import gloggable
+from MissVisa.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
