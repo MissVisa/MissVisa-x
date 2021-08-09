@@ -1,9 +1,7 @@
-#  SPECIAL THANKS SABER 
-# EDITED BY DIHAN OFFICIAL 2021
 
-# Copyright (C) 2021 Dihan Official
+# Copyright (C) 2021 CALL ME VP 
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of MissVisa (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -20,9 +18,9 @@
 
 
 
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.alternate import typing_action
+from MissVisa import dispatcher
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
