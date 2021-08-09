@@ -1,4 +1,4 @@
-#SophiaSLBot
+#MissVisaBot
 
 
 # New chat added -> setup permissions
@@ -6,8 +6,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from Sophia.modules.sql import SESSION, BASE
-
+from MissVisa.modules.sql import SESSION, BASE
 
 class Permissions(BASE):
     __tablename__ = "permissions"
