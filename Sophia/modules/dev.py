@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import Sophia
+import MissVisa
 
-from Sophia import dispatcher
-from Sophia.modules.helper_funcs.chat_status import dev_plus
+from MissVisa import dispatcher
+from MissVisa.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,7 +18,7 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {Sophia.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {MissVisa.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
         Sophia.ALLOW_CHATS = True
