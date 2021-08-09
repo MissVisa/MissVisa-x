@@ -6,18 +6,18 @@ import requests
 
 from PIL import Image
 from telegram import ParseMode
-from Sophia import dispatcher, updater
+from MissVisa import dispatcher, updater
 
 
-import Sophia.modules.sql.nsfw_sql as sql
-from Sophia.modules.log_channel import gloggable
+import MissVisa.modules.sql.nsfw_sql as sql
+from MissVisa.modules.log_channel import gloggable
 
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
 
-from Sophia.modules.helper_funcs.filters import CustomFilters
-from Sophia.modules.helper_funcs.chat_status import user_admin
+from MissVisa.modules.helper_funcs.filters import CustomFilters
+from MissVisa.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
@@ -26,7 +26,7 @@ from telegram.utils.helpers import mention_html, mention_markdown, escape_markdo
 def add_nsfw(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
-    user = update.effective_user #Remodified by @EverythingSuckz
+    user = update.effective_user #Remodified by @CALL_ME_VP
     is_nsfw = sql.is_nsfw(chat.id)
     if not is_nsfw:
         sql.set_nsfw(chat.id)
