@@ -10,9 +10,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from Sophia import DRAGONS as SUDO_USERS
-from Sophia import pbot
-from Sophia.modules.sql_extended import forceSubscribe_sql as sql
+from MissVisa import DRAGONS as SUDO_USERS
+from MissVisa import pbot
+from MissVisa.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -109,7 +109,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "❗ **Sophia is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "❗ **MissVisa is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
