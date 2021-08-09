@@ -1,7 +1,7 @@
 import threading
 
-from Sophia.modules.sql import BASE
-from Sophia.modules.sql import SESSION
+from MissVisa.modules.sql import BASE
+from MissVisa.modules.sql import SESSION
 
 from sqlalchemy import Boolean 
 from sqlalchemy import Column
