@@ -1,12 +1,12 @@
 import html
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia import dispatcher, DRAGONS
-from Sophia.modules.helper_funcs.extraction import extract_user
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa import dispatcher, DRAGONS
+from MissVisa.modules.helper_funcs.extraction import extract_user
 
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import Sophia.modules.sql.approve_sql as sql
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.log_channel import loggable
+import MissVisa.modules.sql.approve_sql as sql
+from MissVisa.modules.helper_funcs.chat_status import user_admin
+from MissVisa.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 
 from telegram.utils.helpers import mention_html
