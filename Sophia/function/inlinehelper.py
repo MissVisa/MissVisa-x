@@ -19,11 +19,11 @@ from pyrogram.types import (
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from Sophia import BOT_USERNAME, OWNER_ID
-from Sophia.config import get_str_key
-from Sophia.function.pluginhelpers import convert_seconds_to_minutes as time_convert
-from Sophia.function.pluginhelpers import fetch
-from Sophia.Best_Of_Sophia.pyrogram import pbot
+from MissVisa import BOT_USERNAME, OWNER_ID
+from MissVisa.config import get_str_key
+from MissVisa.function.pluginhelpers import convert_seconds_to_minutes as time_convert
+from MissVisa.function.pluginhelpers import fetch
+from MissVisa.Best_Of_Sophia.pyrogram import pbot
 
 ARQ_API = get_str_key("ARQ_API", required=True)
 ARQ_API_KEY = ARQ_API
@@ -83,19 +83,19 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/SophiaSLBot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/MissVisa_Bot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Sophia✨](https://github.com/dihanrandila1):**
+**[MissVisa✨](https://github.com/MissVisa):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/sophiaxmusic)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/MissVisa_Assistant)
 """
     answers.append(
         InlineQueryResultArticle(
