@@ -1,11 +1,11 @@
-# Copyright (C) 2020-2021 by dihanofficial@Github, < https://github.com/dihanofficial >.
+# Copyright (C) 2020-2021 by CALLMEVP@Github, < https://github.com/MissVisa >.
 # All rights reserved.
 
 
 from pyrogram import filters
 
-from Sophia.Best_Of_Sophia.pluginshelper import admins_only, get_text
-from Sophia import pbot
+from MissVisa.Best_Of_Sophia.pluginshelper import admins_only, get_text
+from MissVisa import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
