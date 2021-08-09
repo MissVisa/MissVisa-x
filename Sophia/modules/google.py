@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from Sophia import telethn as tbot
+from MissVisa import telethn as tbot
 import glob
 import io
 import os
@@ -21,9 +21,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Sophia import *
+from MissVisa import *
 
-from Sophia.events import register
+from MissVisa.events import register
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
@@ -221,5 +221,5 @@ __help__ = """
  ~ /imdb <Movie name>*:* Get full info about a movie with imdb.com
  ~ Yone <query>*:* Yone answers the query
 
-  😜Ex: `Yone where is Sri lanka?`
+  😜Ex: `Visa where is Sri lanka?`
 """
