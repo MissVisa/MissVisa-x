@@ -25,7 +25,7 @@ GIFS = [
     "CgACAgUAAx0CU_rCTAABAjdSX1s3fq5iEJ64YeQLKI8cD7CSuSEAAlUBAAJu09hW5iqWB0hTPD4bBA",
 ]
 
-SLAP_YONE_TEMPLATES = (
+SLAP_VISA_TEMPLATES = (
     "Slap me one more time and I'll mute you.",
     "Stop slapping me. REEEEEEEEEEEEEE.",
     [
@@ -135,6 +135,8 @@ SLAP_TEMPLATES = (
     "{user1} subscribed {user2}' to 5 years of bad internet.",
     "You know what’s worse than Dad jokes? {user2}!",
     "{user1} took all of {user2}'s cookies.",
+    "{user1} aao hamare group me or masti me jhul jao.",
+    "{user1} aao to welcome jao to bhid kamm.",
     "{user2} wa mou.......Shindeiru! - {user1}.",
     "{user2} lost his race piece!",  # No game no life reference
     "Shut up {user2}, you are just {user2}.",  # No game no life reference
