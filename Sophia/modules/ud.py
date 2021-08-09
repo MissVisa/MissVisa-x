@@ -1,6 +1,6 @@
 import requests
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from MissVisa import dispatcher
+from MissVisa.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
