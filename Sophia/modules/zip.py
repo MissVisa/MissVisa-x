@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from Sophia import TEMP_DOWNLOAD_DIRECTORY
-from Sophia import telethn as client
-from Sophia.events import register
+from MissVisa import TEMP_DOWNLOAD_DIRECTORY
+from MissVisa import telethn as client
+from MissVisa.events import register
 
 
 async def is_register_admin(chat, user):
