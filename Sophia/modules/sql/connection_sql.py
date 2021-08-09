@@ -4,8 +4,8 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
 
-from Sophia.modules.sql import SESSION
-from Sophia.modules.sql import BASE
+from MissVisa.modules.sql import SESSION
+from MissVisa.modules.sql import BASE
 
 class ChatAccessConnectionSettings(BASE):
     __tablename__ = "access_connection"
