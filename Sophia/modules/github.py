@@ -1,7 +1,7 @@
 import aiohttp
 from pyrogram import filters
-from Sophia import pbot
-from Sophia.Best_Of_Sophia.errors import capture_err
+from MissVisa import pbot
+from MissVisa.Best_Of_MissVisa.errors import capture_err
 
 
 __mod_name__ = "💞Github💞"
