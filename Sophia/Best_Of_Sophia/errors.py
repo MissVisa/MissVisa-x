@@ -2,8 +2,8 @@ import sys
 import traceback
 from functools import wraps
 
-from Sophia import pbot 
-from Sophia import SUPPORT_CHAT
+from MissVisa import pbot 
+from MissVisa import SUPPORT_CHAT
 
 def split_limits(text):
     if len(text) < 2048:
