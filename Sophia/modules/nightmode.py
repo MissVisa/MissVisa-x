@@ -1,12 +1,12 @@
 import os
 
-from Sophia.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from MissVisa.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from Sophia.events import register
-from Sophia import OWNER_ID
-from Sophia import telethn as tbot
+from MissVisa.events import register
+from MissVisa import OWNER_ID
+from MissVisa import telethn as tbot
 from telethon import *
 from telethon import Button, custom, events
 
@@ -129,7 +129,7 @@ async def job_close():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Evlie** More Support @dihan_official"
+              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By CALLMEVP** More Support @Visa_Support"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -151,7 +151,7 @@ async def job_open():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Masha**"
+              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Visa**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
