@@ -1,8 +1,8 @@
 import threading
 
-from Sophia.modules.helper_funcs.msg_types import Types
-from Sophia.modules.sql import BASE
-from Sophia.modules.sql import SESSION
+from MissVisa.modules.helper_funcs.msg_types import Types
+from MissVisa.modules.sql import BASE
+from MissVisa.modules.sql import SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 
 
