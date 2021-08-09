@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from Sophia import (
+from MissVisa import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from Sophia import (
     dispatcher,
     sw,
 )
-from Sophia.__main__ import STATS, TOKEN, USER_INFO
-import Sophia.modules.sql.userinfo_sql as sql
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.sql.global_bans_sql import is_user_gbanned
-from Sophia.modules.sql.afk_sql import is_afk, check_afk_status
-from Sophia.modules.sql.users_sql import get_user_num_chats
-from Sophia.modules.helper_funcs.chat_status import sudo_plus
-from Sophia.modules.helper_funcs.extraction import extract_user
-from Sophia import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from MissVisa.__main__ import STATS, TOKEN, USER_INFO
+import MissVisa.modules.sql.userinfo_sql as sql
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.sql.global_bans_sql import is_user_gbanned
+from MissVisa.modules.sql.afk_sql import is_afk, check_afk_status
+from MissVisa.modules.sql.users_sql import get_user_num_chats
+from MissVisa.modules.helper_funcs.chat_status import sudo_plus
+from MissVisa.modules.helper_funcs.extraction import extract_user
+from MissVisa import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
