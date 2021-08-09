@@ -1,6 +1,6 @@
-#Dihan Official 2021
+#CALL ME VP 2021
 
-from Sophia import DEV_USERS, DRAGONS, DEMONS
+from MissVisa import DEV_USERS, DRAGONS, DEMONS
 from telegram import Message
 from telegram.ext import BaseFilter
 
