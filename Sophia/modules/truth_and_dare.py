@@ -1,10 +1,10 @@
 import html
 import random
-import Sophia.modules.truth_and_dare_string as truth_and_dare_string
-from Sophia import dispatcher
+import MissVisa.modules.truth_and_dare_string as truth_and_dare_string
+from MissVisa import dispatcher
 
 from telegram import ParseMode, Update, Bot
-from Sophia.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
