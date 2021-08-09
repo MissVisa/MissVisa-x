@@ -4,10 +4,10 @@ import requests
 from PyDictionary import PyDictionary
 from telethon import *
 
-# Copyright (C) 2021 Dihan Official
+# Copyright (C) 2021 CALL ME VP
 
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of MissVisa (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -24,7 +24,7 @@ from telethon import *
 
 from telethon.tl.types import *
 
-from Sophia.events import register
+from MissVisa.events import register
 
 API_KEY = "6ae0c3a0-afdc-4532-a810-82ded0054236"
 URL = "http://services.gingersoftware.com/Ginger/correct/json/GingerTheText"
