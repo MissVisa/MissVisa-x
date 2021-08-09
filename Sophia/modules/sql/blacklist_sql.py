@@ -1,12 +1,12 @@
-#DihanOfficial
-#SophiaX_Updates
+#CALL ME VP
+#MissVisa_Updates
 
 
 import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
 
-from Sophia.modules.sql import SESSION, BASE
+from MissVisa.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
