@@ -1,4 +1,4 @@
-from Sophia import telethn as tbot
+from MissVisa import telethn as tbot
 import requests
 import time
 
