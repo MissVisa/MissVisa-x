@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import Sophia.modules.sql.notes_sql as sql
-from Sophia import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from Sophia.__main__ import DATA_IMPORT
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.helper_funcs.alternate import typing_action
+import MissVisa.modules.sql.notes_sql as sql
+from MissVisa import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from MissVisa.__main__ import DATA_IMPORT
+from MissVisa.modules.helper_funcs.chat_status import user_admin
+from MissVisa.modules.helper_funcs.alternate import typing_action
 
-# from Sophia.modules.rules import get_rules
-import Sophia.modules.sql.rules_sql as rulessql
+# from MissVisa.modules.rules import get_rules
+import MissVisa.modules.sql.rules_sql as rulessql
 
-# from Sophia.modules.sql import warns_sql as warnssql
-import Sophia.modules.sql.blacklist_sql as blacklistsql
-from Sophia.modules.sql import disable_sql as disabledsql
+# from MissVisa.modules.sql import warns_sql as warnssql
+import MissVisa.modules.sql.blacklist_sql as blacklistsql
+from MissVisa.modules.sql import disable_sql as disabledsql
 
-# from Sophia.modules.sql import cust_filters_sql as filtersql
-# import Sophia.modules.sql.welcome_sql as welcsql
-import Sophia.modules.sql.locks_sql as locksql
-from Sophia.modules.connection import connected
+# from MissVisa.modules.sql import cust_filters_sql as filtersql
+# import MissVisa.modules.sql.welcome_sql as welcsql
+import MissVisa.modules.sql.locks_sql as locksql
+from MissVisa.modules.connection import connected
 
 
 
@@ -169,7 +169,7 @@ def export_data(update, context):
     buttonlist = []
     namacat = ""
     isicat = ""
-    rules = ""
+    rules = ""i
     count = 0
     countbtn = 0
     # Notes
@@ -376,7 +376,7 @@ __help__ = """
  Note that files / photos cannot be imported due to telegram restrictions.
  - /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
 
-@DihanOfficial
+@Visa_Support
 """
 
 IMPORT_HANDLER = CommandHandler("import", import_data)
