@@ -1,6 +1,6 @@
 """
 XIT License 2021
-Copyright (c) 2021 Dihan Official
+Copyright (c) 2021 CALL ME VP
 """
 import asyncio
 import os
@@ -10,10 +10,10 @@ import time
 import psutil
 from pyrogram import filters
 
-from Sophia import (bot_start_time, DEV_USERS, pbot)
-from Sophia.utils import formatter
+from MissVisa import (bot_start_time, DEV_USERS, pbot)
+from MissVisa.utils import formatter
 
-from Sophia.core.decorators.errors import capture_err
+from MissVisa.core.decorators.errors import capture_err
 
 
 
@@ -40,7 +40,7 @@ async def bot_sys_stats():
     disk = psutil.disk_usage("/").percent
     process = psutil.Process(os.getpid())
     stats = f"""
-root@DihanOfficial:~$ Sophia 
+root@Visa_Support:~$ MissVisa
 ------------------
 UPTIME: {formatter.get_readable_time((bot_uptime))}
 BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB
