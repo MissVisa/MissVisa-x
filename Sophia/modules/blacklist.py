@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import Sophia.modules.sql.blacklist_sql as sql
-from Sophia import dispatcher, LOGGER
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Sophia.modules.helper_funcs.extraction import extract_text
-from Sophia.modules.helper_funcs.misc import split_message
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.warns import warn
-from Sophia.modules.helper_funcs.string_handling import extract_time
-from Sophia.modules.connection import connected
-from Sophia.modules.sql.approve_sql import is_approved
-from Sophia.modules.helper_funcs.alternate import send_message, typing_action
+import MissVisa.modules.sql.blacklist_sql as sql
+from MissVisa import dispatcher, LOGGER
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from MissVisa.modules.helper_funcs.extraction import extract_text
+from MissVisa.modules.helper_funcs.misc import split_message
+from MissVisa.modules.log_channel import loggable
+from MissVisa.modules.warns import warn
+from MissVisa.modules.helper_funcs.string_handling import extract_time
+from MissVisa.modules.connection import connected
+from MissVisa.modules.sql.approve_sql import is_approved
+from MissVisa.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
