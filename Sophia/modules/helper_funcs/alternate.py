@@ -21,4 +21,4 @@ def typing_action(func):
         )
         return func(update, context, *args, **kwargs)
 
-    return command_funcm
+    return command_func
