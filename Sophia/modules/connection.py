@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-import Sophia.modules.sql.connection_sql as sql
-from Sophia import dispatcher, DRAGONS, DEV_USERS
-from Sophia.modules.helper_funcs import chat_status
-from Sophia.modules.helper_funcs.alternate import send_message, typing_action
+import MissVisa.modules.sql.connection_sql as sql
+from MissVisa import dispatcher, DRAGONS, DEV_USERS
+from MissVisa.modules.helper_funcs import chat_status
+from MissVisa.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
