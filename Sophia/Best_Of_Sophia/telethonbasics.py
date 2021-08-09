@@ -2,7 +2,7 @@ import os
 
 from telethon.tl.types import *
 
-from Sophia.Best_Of_Sophia.pluginshelper import runcmd
+from MissVisa.Best_Of_MissVisa.pluginshelper import runcmd
 
 
 async def convert_to_image(event, borg):
