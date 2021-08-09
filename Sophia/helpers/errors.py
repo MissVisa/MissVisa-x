@@ -2,5 +2,5 @@ class DurationLimitError(Exception):
     pass
 
 
-class FFmpegReturnCodeError(Exception)
+class FFmpegReturnCodeError(Exception):
     pass
