@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from Sophia import (
+from MissVisa import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,18 +13,18 @@ from Sophia import (
     WOLVES,
     dispatcher,
 )
-from Sophia.modules.helper_funcs.chat_status import (
+from MissVisa.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from Sophia.modules.helper_funcs.extraction import extract_user
-from Sophia.modules.log_channel import gloggable
+from MissVisa.modules.helper_funcs.extraction import extract_user
+from MissVisa.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Sophia/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "MissVisa/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -631,7 +631,7 @@ def devlist(update: Update, context: CallbackContext):
 #  ❍ /gignoreblue*:* <word>*:* Globally ignorea bluetext cleaning of saved word across HexzyBot.
 #  ❍ /ungignoreblue*:* <word>*:* Remove said command from global cleaning list
 
-# *yone Core*
+# *MissVisa Core*
 # *Owner only*
 #  ❍ /send*:* <module name>*:* Send module
 #  ❍ /install*:* <reply to a .py>*:* Install module 
