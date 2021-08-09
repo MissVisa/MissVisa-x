@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from Sophia import telethn as tbot
+from MissVisa import telethn as tbot
 import glob
 import io
 import os
@@ -21,9 +21,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Sophia import *
+from MissVisa import *
 
-from Sophia.events import register
+from MissVisa.events import register
 
 
 
@@ -88,7 +88,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n »»» App By @SophiaSLBot «««« "
+        app_details += "\n\n »»» App By @MissVisa_bot «««« "
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -101,5 +101,5 @@ __mod_name__ = "💞 APP 💞"
 __help__ = """
  ~ /app <appname>*:* Searches for an app in Play Store and returns its details.
 
-@SophiaSLBot 
+@MissVisa_bot 
 """
