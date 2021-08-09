@@ -12,21 +12,21 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from Sophia import BOT_ID
-from Sophia.conf import get_int_key, get_str_key
+from MissVisa import BOT_ID
+from MissVisa.conf import get_int_key, get_str_key
 
 
-from Sophia.Best_Of_Sophia.telethonbasics import is_admin
-from Sophia.events import register
-from Sophia import MONGO_DB_URI 
+from MissVisa.Best_Of_Sophia.telethonbasics import is_admin
+from MissVisa.events import register
+from MissVisa import MONGO_DB_URI 
 from pymongo import MongoClient
-from Sophia.modules.sql_extended.nsfw_watch_sql import (
+from MissVisa.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from Sophia import telethn as tbot
+from MissVisa import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -35,7 +35,7 @@ MONGO_DB_URI = get_str_key("MONGO_DB_URI")
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Sophia"]
+db = client["MissVisa"]
 
 async def is_nsfw(event):
     lmao = event
@@ -197,7 +197,7 @@ async def nsfw_watch(client, message):
             Escobar = midhun.id
         await client.send_message(
             message.chat.id,
-            f"**NSFW DETECTED**\n\n{hehe}'s message contain NSFW content.. So, Yone deleted the message\n\n **Nsfw Sender - User / Bot :** `{Escobar}` \n**Chat Title:** `{ctitle}` \n\n`⚔️Automatic Detections Powered By YoneAI` \n**#GROUP_GUARDIAN** ",
+            f"**NSFW DETECTED**\n\n{hehe}'s message contain NSFW content.. So, Visa deleted the message\n\n **Nsfw Sender - User / Bot :** `{Escobar}` \n**Chat Title:** `{ctitle}` \n\n`⚔️Automatic Detections Powered By VisaAI` \n**#GROUP_GUARDIAN** ",
         )
         message.continue_propagation()
 """
