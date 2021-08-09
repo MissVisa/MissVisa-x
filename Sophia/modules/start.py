@@ -9,10 +9,10 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & ~ filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgIAAxkBAAEDF6Rgrcl1kZNSrAABqO7L-kVd4tWK48MAAi0BAAIw1J0REIYEuS-exNEeBA")
+    await message.reply_sticker("CAACAgUAAx0CSO7PoAABDA9TYRExWIWjnbOF7rOjDnJwXrjE_WUAAlcEAAL5JElUmDXkx-mFPL4gBA")
     await message.reply_text(
         f"""<b> Hey,👋 {message.from_user.first_name}!
-\n Hello 👋 there! Hey there! My name is 𝗦𝗼𝗽𝗵𝗶𝗮.
+\n Hello 👋 there! Hey there! My name is  ༒ 𝓥 𝓘 𝓢 𝓐 ༒.
 I can help manage your groups with useful features, feel free to add me to your groups!.
  </b>""",
       
@@ -21,7 +21,7 @@ I can help manage your groups with useful features, feel free to add me to your 
                 [
                     [
                           InlineKeyboardButton(
-                               text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),
+                               text="➕ Add  ༒ 𝓥 𝓘 𝓢 𝓐 ༒ to your Group ➕", url="t.me/MissVisa_Bot?startgroup=true"),
                    ],
                    [
                          InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
@@ -30,9 +30,9 @@ I can help manage your groups with useful features, feel free to add me to your 
                        ),
                   ],
                   [
-                        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
+                        InlineKeyboardButton(text="🙋‍♀️ Chat Group 🙋‍", url=f"https://t.me/WeGetTogether"),
                         InlineKeyboardButton(
-                                text="💬 Support Group", url=f"https://t.me/dihan_official"
+                                text="💬 Support Group", url=f"https://t.me/Visa_Support"
                        ),
                    ],
                    [
