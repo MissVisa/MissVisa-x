@@ -1,6 +1,6 @@
 
 
-from telegram import User, Chat
+from telegram import User, Cha
 
 
 def user_can_promote(chat: Chat, user: User, bot_id: int) -> bool:
