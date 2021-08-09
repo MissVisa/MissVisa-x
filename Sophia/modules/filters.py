@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from Sophia import dispatcher, LOGGER, DRAGONS
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.handlers import MessageHandlerChecker
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.helper_funcs.extraction import extract_text
-from Sophia.modules.helper_funcs.filters import CustomFilters
-from Sophia.modules.helper_funcs.misc import build_keyboard_parser
-from Sophia.modules.helper_funcs.msg_types import get_filter_type
-from Sophia.modules.helper_funcs.string_handling import (
+from MissVisa import dispatcher, LOGGER, DRAGONS
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.helper_funcs.handlers import MessageHandlerChecker
+from MissVisa.modules.helper_funcs.chat_status import user_admin
+from MissVisa.modules.helper_funcs.extraction import extract_text
+from MissVisa.modules.helper_funcs.filters import CustomFilters
+from MissVisa.modules.helper_funcs.misc import build_keyboard_parser
+from MissVisa.modules.helper_funcs.msg_types import get_filter_type
+from MissVisa.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Sophia.modules.sql import cust_filters_sql as sql
+from MissVisa.modules.sql import cust_filters_sql as sql
 
-from Sophia.modules.connection import connected
+from MissVisa.modules.connection import connected
 
-from Sophia.modules.helper_funcs.alternate import send_message, typing_action
+from MissVisa.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
