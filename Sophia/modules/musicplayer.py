@@ -26,6 +26,6 @@ __help__ = """
 
 =>>   *Use*
 
-1) Add @SophiaSLBot in your group to admin with all permission
-2) Add Assistant I'd to your group @SophiaXMusic
+1) Add @MissVisa_bot in your group to admin with all permission
+2) Add Assistant I'd to your group @@issVisa_Assistant
 """
