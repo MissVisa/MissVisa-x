@@ -1,5 +1,5 @@
-# By @TroJanzHEX
-# dihanofficial
+# By @Visa_Support
+# CALL ME VP
 
 import os
 import shutil
