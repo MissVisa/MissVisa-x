@@ -5,8 +5,8 @@ from faker import Faker
 from faker.providers import internet
 from telethon import events
 
-from Sophia.Best_Of_Sophia.telethonbasics import is_admin
-from Sophia import telethn as Galaxy
+from MissVisa.Best_Of_Sophia.telethonbasics import is_admin
+from MissVisa import telethn as Galaxy
 
 @Galaxy.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):
@@ -44,8 +44,8 @@ async def _(event):
             with open("Sophia.jpg", "wb") as f:
                 f.write(response.content)
 
-        captin = f"Fake Image powered by @Dihanofficial."
-        fole = "Sophia.jpg"
+        captin = f"Fake Image powered by @Visa_Support."
+        fole = "MissVisa.jpg"
         await Galaxy.send_file(event.chat_id, fole, caption=captin)
         await event.delete()
-        os.system("rm ./Sophia.jpg ")
+        os.system("rm ./MissVisa.jpg ")
