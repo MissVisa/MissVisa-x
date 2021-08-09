@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import Sophia.modules.sql.locks_sql as sql
-from Sophia import dispatcher, DRAGONS, LOGGER
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia.modules.helper_funcs.chat_status import (
+import MissVisa.modules.sql.locks_sql as sql
+from MissVisa import dispatcher, DRAGONS, LOGGER
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.connection import connected
-from Sophia.modules.sql.approve_sql import is_approved
-from Sophia.modules.helper_funcs.alternate import send_message, typing_action
+from MissVisa.modules.log_channel import loggable
+from MissVisa.modules.connection import connected
+from MissVisa.modules.sql.approve_sql import is_approved
+from MissVisa.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
