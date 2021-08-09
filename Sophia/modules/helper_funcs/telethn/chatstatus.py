@@ -1,5 +1,5 @@
-from Sophia.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from Sophia import DRAGONS
+from MissVisa.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from MissVisa import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -42,7 +42,7 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def yone_is_admin(chat_id: int):
+async def MissVisa_is_admin(chat_id: int):
     status = False
     yone = await telethn.get_me()
     async for user in telethn.iter_participants(
