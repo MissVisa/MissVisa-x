@@ -1,8 +1,8 @@
 import importlib
 import collections
 
-from Sophia import dispatcher, telethn
-from Sophia.__main__ import (
+from MissVisa import dispatcher, telethn
+from MissVisa.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -13,7 +13,7 @@ from Sophia.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from Sophia.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from MissVisa.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
