@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import Sophia.modules.sql.welcome_sql as sql
-import Sophia
-from Sophia import (
+import MissVisa.modules.sql.welcome_sql as sql
+import MissVisa
+from MissVisa import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from Sophia import (
     dispatcher,
     JOIN_LOGGER
 )
-from Sophia.modules.helper_funcs.chat_status import (
+from MissVisa.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from Sophia.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Sophia.modules.helper_funcs.msg_types import get_welcome_type
-from Sophia.modules.helper_funcs.string_handling import (
+from MissVisa.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from MissVisa.modules.helper_funcs.msg_types import get_welcome_type
+from MissVisa.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.sql.global_bans_sql import is_user_gbanned
+from MissVisa.modules.log_channel import loggable
+from MissVisa.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
