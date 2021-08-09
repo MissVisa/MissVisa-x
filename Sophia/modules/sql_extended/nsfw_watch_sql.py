@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from Sophia.modules.sql import BASE, SESSION
+from MissVisa.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):
