@@ -9,7 +9,7 @@ Currently support:
      - Music
 
 <b> Setting up </b>
-1) Add @SophiaSLBot to your channel
+1) Add @MissVisa_bot to your channel
 2) Make bot admin with full permissions
 2) Go back to your group
 
@@ -20,6 +20,6 @@ Currently support:
 - /autofiltersettings : Show settings panel about auto filtering channels
 
 <i> Inspired by https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2 </i>
-Original work is done by @CrazyBotsz
+Original work is done by @MissVisa_Updates
 
 """
