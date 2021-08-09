@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from Sophia import TIGERS, WOLVES, dispatcher
-from Sophia.modules.helper_funcs.chat_status import (
+from MissVisa import TIGERS, WOLVES, dispatcher
+from MissVisa.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Sophia.modules.log_channel import loggable
-from Sophia.modules.sql import antiflood_sql as sql
+from MissVisa.modules.log_channel import loggable
+from MissVisa.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from Sophia.modules.helper_funcs.string_handling import extract_time
-from Sophia.modules.connection import connected
-from Sophia.modules.helper_funcs.alternate import send_message
-from Sophia.modules.sql.approve_sql import is_approved
+from MissVisa.modules.helper_funcs.string_handling import extract_time
+from MissVisa.modules.connection import connected
+from MissVisa.modules.helper_funcs.alternate import send_message
+from MissVisa.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
