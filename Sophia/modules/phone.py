@@ -2,10 +2,10 @@ import json
 
 
 
-# Copyright (C) 2021 Dihan Official
+# Copyright (C) 2021 CALL ME VP
 
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of MissVisa (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -53,7 +53,7 @@ async def is_register_admin(chat, user):
     else:
         return None
 
-# Join Our Channel t.me/dihanofficial
+# Join Our Channel t.me/MissVisa_Updates
 
 @register(pattern=r"^/phone (.*)")
 async def phone(event):
