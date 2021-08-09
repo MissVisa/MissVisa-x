@@ -1,7 +1,7 @@
 
   
 ""
-" WRITTEN BY @DihanRandila, https://github.com/Dihanrandila1"""
+" WRITTEN BY @CALL_ME_VP, https://github.com/MissVisa"""
 
 import sys
 import traceback
@@ -9,7 +9,7 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from Sophia import EVENT_LOGS , pbot 
+from MissVisa import EVENT_LOGS , pbot 
 
 
 def split_limits(text):
