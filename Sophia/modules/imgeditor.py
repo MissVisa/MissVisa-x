@@ -1,5 +1,5 @@
-# By @TroJanzHEX
-# Edited By Dihan Official
+# By @MissVisa_Updates
+# Edited By CALL ME VP
 
 from pyrogram import filters
 from pyrogram.types import (
@@ -9,8 +9,8 @@ from pyrogram.types import (
     Message,
 )
 
-# By @TroJanzHEX
-from Sophia.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
+# By @MissVisa_Updates
+from MissVisa.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
@@ -18,7 +18,7 @@ from Sophia.Addons.ImageEditor.edit_1 import (  # pylint:disable=import-error
     mix,
     normal_blur,
 )
-from Sophia.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from MissVisa.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -28,13 +28,13 @@ from Sophia.Addons.ImageEditor.edit_2 import (  # pylint:disable=import-error
     sepia_mode,
     sticker,
 )
-from Sophia.Addons.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from MissVisa.Addons.ImageEditor.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from Sophia.Addons.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from MissVisa.Addons.ImageEditor.edit_4 import (  # pylint:disable=import-error
     inverted,
     removebg_plain,
     removebg_sticker,
@@ -44,7 +44,7 @@ from Sophia.Addons.ImageEditor.edit_4 import (  # pylint:disable=import-error
     rotate_270,
     round_sticker,
 )
-from Sophia.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from MissVisa.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -56,7 +56,7 @@ from Sophia.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from Sophia.Best_Of_Sophia.pyrogram import Sophia as Client
+from MissVisa.Best_Of_MissVisa.pyrogram import MissVisa as Client
 
 lel = 00000000
 # pylint:disable=import-error
@@ -457,5 +457,5 @@ Sophiazy have some advanced image editing tools inbuilt
 Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
 - /edit [reply to image]: Open the image editor
 - /rmbg [REPLY]: Revove BG of replied image or sticker.
-<i> Special credits to TroJanzHEX ❤</i>
+<i> Special credits to CALLMEVP ❤</i>
 """
