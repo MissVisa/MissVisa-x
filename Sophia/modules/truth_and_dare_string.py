@@ -33,6 +33,7 @@ DARE = (
     "Give a lap dance to someone of your choice",
     "Remove four items of clothing",
     "Like the first 15 posts on your Facebook newsfeed",
+    "Expose your Secret Girlfriend",
     "Eat a spoonful of mustard",
     "Keep your eyes closed until it's your go again",
     "Send a sext to the last person in your phonebook",
