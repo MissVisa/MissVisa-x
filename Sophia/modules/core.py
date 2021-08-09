@@ -1,16 +1,16 @@
-from Sophia import telethn as tbot
-from Sophia.events import register
+from MissVisa import telethn as tbot
+from MissVisa.events import register
 import os
 import asyncio
 import os
 import time
 
 from datetime import datetime
-from Sophia import OWNER_ID, DEV_USERS
-from Sophia import TEMP_DOWNLOAD_DIRECTORY as path
-from Sophia import TEMP_DOWNLOAD_DIRECTORY
+from MissVisa import OWNER_ID, DEV_USERS
+from MissVisa import TEMP_DOWNLOAD_DIRECTORY as path
+from MissVisa import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './Sophia/resources/yone.jpg'
+water = './MissVisa/resources/MissVisa.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -22,7 +22,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./Sophia/modules/{}.py".format(input_str)
+    the_plugin_file = "./MissVisa/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
