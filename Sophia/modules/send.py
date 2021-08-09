@@ -5,10 +5,10 @@ from telegram import MessageEntity
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
-from Sophia import dispatcher
-from Sophia.modules.disable import DisableAbleCommandHandler
+from MissVisa import dispatcher
+from MissVisa.modules.disable import DisableAbleCommandHandler
 
-from Sophia.modules.helper_funcs.alternate import send_message
+from MissVisa.modules.helper_funcs.alternate import send_message
 
 @run_async
 def send(update, context):
