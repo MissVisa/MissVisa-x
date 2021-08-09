@@ -1,6 +1,6 @@
-from Sophia import telethn as tbot
+from MissVisa import telethn as tbot
 import os
-from Sophia.events import register
+from MissVisa.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
