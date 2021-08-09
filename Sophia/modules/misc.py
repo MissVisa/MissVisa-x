@@ -1,6 +1,6 @@
-from Sophia.modules.helper_funcs.chat_status import user_admin
-from Sophia.modules.disable import DisableAbleCommandHandler
-from Sophia import dispatcher
+from MissVisa.modules.helper_funcs.chat_status import user_admin
+from MissVisa.modules.disable import DisableAbleCommandHandler
+from MissVisa import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
